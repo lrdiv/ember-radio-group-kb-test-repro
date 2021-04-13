@@ -1,0 +1,13 @@
+<div id="radio-group">
+  <button type="button" id="first-focus">A Button</button>
+
+  {{#each this.ratings as |rating|}}
+    <label>
+      {{rating}}
+      <input type="radio" name="rating-radio" id="rating-{{rating}}" value={{rating}} />
+    </label>
+  {{/each}}
+
+  <button type="button" id="last-focus">Another Button</button>
+</div>
+
